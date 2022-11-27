@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <link rel="stylesheet" href="principal.js">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="filtro.js">
+    <head>
+        <meta name="viewport" content="width=device-width">
+         <div class="caixa">
+    <h1 style="background: url(bglivros.png); padding: 40px"><img src="0cae7b12-ad96-42a7-a87a-abaeb0d65c15.jpeg" width="750px" ></h1>
+
+    <nav>
+        <ul style= "display: inline;">
+           
+             <li><a style="text-transform: uppercase;color: #000000 ; font-weight: bold; font-size: 22px; text-decoration: none; position: top 110px; right: 0 ; display: inline; margin: 150px 150px 100px 150px; position:absolute; top: 80px ; right: 0;" href="index.html"><strong>Home</strong></a></li>
+
+            <li><a style="text-transform: uppercase;color: #000000 ; font-weight: bold; font-size: 22px; text-decoration: none;position: top 110px; right: 0 ; display: inline; margin: 150px 150px 100px 150px; position:absolute; top: 130px ; right: 0;" href="Produtos.html"><strong>Produtos</strong></a></li>
+
+            <li><a style="text-transform: uppercase;color: #000000 ; font-weight: bold; font-size: 22px; text-decoration: none;position: top 110px; right: 0 ; display: inline; margin: 150px 150px 100px 150px; position:absolute; top: 180px ; right: 0;" href="Contato.html"> <strong>Contato</strong></a></li>
+            
+                 <li><a style="text-transform: uppercase;color: #000000 ; font-weight: bold; font-size: 22px; text-decoration: none; position: top 110px; right: 0 ; display: inline; margin: 150px 150px 100px 150px; position:absolute; top: 230px ; right: 0;" href="pedidos.html"><strong>Pedidos</strong></a></li>
+
+        <meta charset="UTF-8">
+        <title>Lanchonete do Batata</title>
+        <link rel="stylesheet" href="style.css">
+        </header>
+      <body>
+        <aside style="background: linear-gradient(white, gray);">
+           
+               
+        <header>
+          <div class="container">
+            <h1 class="titulo" style="text-align: center"> Pedidos - SHAKE & HISTORYS ♥️ </h1>
+        </header>
+        <div style="margin-left: 300px;
+    margin-right: 580px;
+    width: 6em;">
+          <section class="container">
+            <h2 style="font-family:'Montserrat', sans-serif; text-align: center;">Clientes</h2>
+              
+              <label for="filtrar">   Coloque:           </label>
+            <input style="width: 200px; height: 35px; margin-botton: 10px;"
+type="text" name="filtro" id="filtrar" placeholder="Digite o nome do cliente">
+              
+              
+              
+              
+              
+            <table>
+              <thead>
+                <tr>
+                  <th>Nome</th>
+                  <th>Produto</th>
+                  <th>Ml</th><wks>
+                  <th>Acompanhamento</th>
+                  <th>Preço total</th>
+                </tr>
+              </thead>
+             <tbody id="tabela-clientes">
+               <tr class="Clientes">
+                 <td class="info-nome">Paulo</td>
+                 <td class="info-produto">Café</td>
+                 <td class="info-kg">100ml</td>
+                 <td class="info-valor">Doce com nutella</td>
+                 <td class="info-total">17,00</td>
+               </tr>
+               
+                 <tr class="Clientes">
+                 <td class="info-nome">leito</td>
+                 <td class="info-produto">chá</td>
+                 <td class="info-kg">200ml</td><wks>
+                 <td class="info-valor">Paçoca</td>
+                 <td class="info-total">12,50</td>
+               </tr>
+               
+                 <tr class="Clientes">
+                 <td class="info-nome">Natalia</td>
+                 <td class="info-produto">brigadeiro gourmet</td><wks>
+                 <td class="info-kg">N/A</td>
+                 <td class="info-valor">N/A</td>
+                 <td class="info-total">5,00</td>
+               </tr>
+               
+               
+               </tr>
+              </tbody>
+            </table>
+          </section>
+        
+          
+          <section class="container">
+              <h2 style="font-family:'Montserrat', sans-serif;" id="titulo-form">Adicionar novo Cliente</h2>
+              <form id="form-adicionar">
+                  <div class="grupo"><wks>
+                      <label style="
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;" for="nome">Nome:</label>
+                      <input style="
+    display: block;
+    font-size: 30px;
+    margin: 0 0 10px;" id="nome" name="nome" type="text" placeholder="digite o nome do seu cliente" class="campo">
+                  </div>
+                    <div class="grupo">
+                  <div class="grupo">
+                      <label style="
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;" for="produto">Produto:</label>
+                      <input style="
+    display: block;
+    font-size: 30px;
+    margin: 0 0 10px;" id="produto" name="produto" type="text" placeholder="digite o produto do seu cliente" class="campo">
+                  </div>
+                    <div class="grupo">
+                      <label style="
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;" for="kg">Acompanhamento:</label>
+                      <input style="
+    display: block;
+    font-size: 30px;
+    margin: 0 0 10px;" id="kg" name="kg" type="text" placeholder="digite qual é o Acompanhamento" class="campo">
+                  
+                        <button style="
+    display: block;
+    font-size: 18px;
+    margin: 0 0 10px;
+    width: 300px;
+    padding: 15px 0;
+    background: blue;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;" id="adicionar-cliente" class="botao">Adicionar</button>
+     </div>
+                        
+                        <script src="principal.js"></script>
+                        <script src="filtro.js"></script>
+          <footer style= "text-align: center; ">
+    
+    <p class="copyright">&copy; Copyright SHAKE & HISTORYS ♥️</p>
+  </aside>
+</footer>
+</html>
+        </body>
+      </html>
